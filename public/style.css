@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://t4.ftcdn.net/jpg/08/03/03/03/360_F_803030310_pc6jM9cLb97XQX1JeIo2c8AKIgFFat9u.jpg);
+    display: grid;
+    place-items: center;
+    background-color: #f7f7f7;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.main {
+    border: 8px solid #e8d4e6;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    display: flex;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 12px 18px;
+    color: #4f2c7f; /* Lavender color */
+    background-color: #fce6f1; /* Light pink background */
+}
+
+.name > span {
+    color: #e2a7d2; /* Soft pink */
+}
+
+.name-input {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4f2c7f; /* Lavender color */
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #fce6f1; /* Light pink */
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-left, .message-right {
+    list-style: none;
+    padding: 10px 15px;
+    max-width: 250px;
+    margin: 12px;
+    font-size: 18px;
+    word-wrap: break-word;
+    border-radius: 16px;
+}
+
+.message-left {
+    background-color: #e8d4e6; /* Lavender background */
+    align-self: flex-start;
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-right {
+    background-color: #e15f6d; /* Darker pink */
+    color: #ffffff;
+    align-self: flex-end;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-right > p > span, .message-left > p > span {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 6px;
+    color: #e2a7d2; /* Soft pink */
+}
+
+.feedback {
+    font-size: 14px;
+    padding: 0 16px 16px 16px;
+    color: #4f2c7f; /* Lavender color */
+    text-align: center;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.message-input {
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border: 1px solid #e2a7d2; /* Soft pink */
+    outline: none;
+    padding: 0 12px;
+    background-color: #fce6f1; /* Light pink */
+}
+
+.send-button {
+    height: 48px;
+    font-size: 16px;
+    border: 1px solid #e2a7d2; /* Soft pink */
+    outline: none;
+    background-color: #ffffff;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #4f2c7f; /* Lavender color */
+}
+
+.send-button:hover {
+    background-color: #fce6f1; /* Light pink hover */
+}
+
+.v-divider {
+    height: 48px;
+    width: 2px;
+    background-color: #f6f6f6;
+}
+
+.clients-total {
+    margin: 20px 0;
+    color: #4f2c7f; /* Lavender color */
+}
